@@ -11,7 +11,11 @@ $events = json_decode($content, true);
     //รับข้อความจากผู้ใช้
     $message = $arrayJson['events'][0]['message']['text'];
 #ตัวอย่าง Message Type "Text"
-    if($message == "สวัสดี"){
+if (!is_null($events['events'])) {
+	// Loop through each event
+	foreach ($events['events'] as $event) {
+		// Reply only when message sent is in 'text' format
+		if ($event['type'] == 'message' && $event['message']['type'] == 'text' && $message == "สวัสดี"){
 			// Get text sent
 			//$text = $event['source']['userId'];
 			// Get replyToken
@@ -40,6 +44,7 @@ $events = json_decode($content, true);
 			curl_close($ch);
 			echo $result . "\r\n";
     }
+	}
 echo "Not OK";
 
 
