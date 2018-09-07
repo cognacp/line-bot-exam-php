@@ -8,7 +8,6 @@ $access_token = '4VvnANEszQSxXNdswT4lfJd6vB9TYnP5MgrVdXy+jXc3KRGPnjJbAj2z/rUr3sI
 ';
 
 $channelSecret = '366cfb8e7caf9000f8f0ad7eca6c018b';
-
 $pushID = 'Ufbbf0b16c2578d6c7df2b29034d63bc2';
 
 $httpClient = new \LINE\LINEBot\HTTPClient\CurlHTTPClient($access_token);
