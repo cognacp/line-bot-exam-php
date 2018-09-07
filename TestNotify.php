@@ -9,7 +9,7 @@ $content = file_get_contents('php://input');
 $events = json_decode($content, true);
     
     //รับข้อความจากผู้ใช้
-    $message = 'สวัสดี' //$arrayJson['events'][0]['message']['text'];
+    $message = $arrayJson['events'][0]['message']['text'];
 #ตัวอย่าง Message Type "Text"
     if($message == "สวัสดี"){
 			// Get text sent
