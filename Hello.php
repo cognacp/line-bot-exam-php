@@ -1,7 +1,7 @@
 <?php
 //echo "Hello World สวัสดีชาวโลก"."<br>";
 define("CONSTANT", "Hello world.");
-echo "define";
+echo "define constant hello world"."<br>";
 echo CONSTANT."<br>"; // outputs "Hello world."
 //echo "Constant."<br>"; // outputs "Constant" and issues a notice.";
 echo Constant."<br>"; // outputs "Constant" and issues a notice.
